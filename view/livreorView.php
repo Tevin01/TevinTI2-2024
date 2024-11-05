@@ -18,7 +18,7 @@
     <div id="thatform">
     <img src="img/email.png">
     <form action="" method="POST" name="or" id="form">
-        <fieldset>
+        <fieldset id=>
             <h2> Laissez nous un message</h2>
             <label>Prenom * </label>
             <input type="text" placeholder="" name="prenom" id="prenom" required>
@@ -67,7 +67,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title"><?php echo $commentaire['usermail']; ?> - <?php echo $commentaire['datemessage']; ?></h5>
-                <p class="card-text"><?php echo wordwrap($commentaire['message'],35 , "\n", true) ?></p>
+                <p class="card-text"><?php echo nl2br($commentaire['message']); ?></p>
             </div>
         </div>
         <?php

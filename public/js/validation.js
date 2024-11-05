@@ -15,7 +15,7 @@ checking();
         var mail = document.getElementById("email").value;
         var msg = document.getElementById("message").value;
 
-        if (firstName.length >= 1 && secondName.length >= 1 && msg.length >= 1 && /@/.test(mail) && /\./.test(mail)) {
+        if (firstName.length >= 2 && secondName.length >= 2 && msg.length >= 50 && /@/.test(mail) && /\./.test(mail)) {
             alert("Yes.");
         } else {
             alert("Nope.");
